@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi');
+
+// Set your brand colors
+$purple: #8A4D76;
+$pink: #FA7C91;
+$brown: #757763;
+$beige-light: #D0D1CD;
+$beige-lighter: #EFF0EB;
+
+// Update Bulma's global variables
+$family-sans-serif: "Reem Kufi", sans-serif;
+$grey-dark: $brown;
+$grey-light: $beige-light;
+// $primary: $purple;
+// $link: $pink;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$border: $grey-light;
+
+// Import only what you need from Bulma
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/form.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/progress.sass";
+
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/components/media.sass";
+@import "../node_modules/bulma/sass/components/card.sass";
+
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+@import "../node_modules/bulma/sass/grid/columns.sass";
+
+.hero * {
+  color: white;
+}
+
+.media p {
+  padding: 0.5em 0;
+}
+
+.icons-social i {
+  font-size: 3em;
+  padding: 10px;
+}
+
+section.hero {
+  // background-color: #036fda;
+  // background-image: linear-gradient( 109.6deg,  rgba(92,184,229,1) 11.2%, rgba(0,141,203,1) 91.2% );
+  background-image: radial-gradient( circle farthest-corner at 12.3% 19.3%,  rgba(85,88,218,1) 0%, rgba(95,209,249,1) 100.2% );
+}
